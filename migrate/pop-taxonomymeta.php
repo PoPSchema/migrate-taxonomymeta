@@ -6,7 +6,7 @@ Description: The foundation for a PoP Taxonomy Meta
 Plugin URI: https://getpop.org/
 Author: Leonardo Losoviz
 */
-namespace PoP\TaxonomyMeta;
+namespace PoPSchema\TaxonomyMeta;
 use PoP\Hooks\Facades\HooksAPIFacade;
 
 //-------------------------------------------------------------------------------------

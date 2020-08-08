@@ -1,12 +1,12 @@
 <?php
-namespace PoP\TaxonomyMeta;
+namespace PoPSchema\TaxonomyMeta;
 
 class Utils
 {
     public static function getMetaKey($meta_key)
     {
         $functionapi = FunctionAPIFactory::getInstance();
-        return $functionapi->getMetaKey(\PoP\Meta\Utils::getMetakeyPrefix().$meta_key);
+        return $functionapi->getMetaKey(\PoPSchema\Meta\Utils::getMetakeyPrefix().$meta_key);
     }
 
     public static function getTermMeta($term_id, $key, $single = false)
@@ -16,7 +16,7 @@ class Utils
     }
     public static function updateTermMeta($term_id, $key, $values, $single = false, $boolean = false)
     {
-        $values = \PoP\Meta\Utils::normalizeValues($values);
+        $values = \PoPSchema\Meta\Utils::normalizeValues($values);
 
         // Add the values as independent values so each one of them can be searched using EXISTS on WP_Query
         $functionapi = FunctionAPIFactory::getInstance();
